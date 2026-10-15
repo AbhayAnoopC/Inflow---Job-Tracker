@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-bg: #1c3829;
+  --sidebar-text: #a8c5b0;
+  --sidebar-active: #ffffff;
+  --sidebar-accent: #4a9b6f;
+  --page-bg: #f7f5f0;
+  --card-bg: #ffffff;
+  --card-border: #e8e4dc;
+  --row-alt: #fafaf7;
+  --ink: #1a1a1a;
+  --ink-muted: #6b6860;
+  --accent: #2d7a52;
+  --accent-hover: #3f9d6e;
+  --coop-bg: #d4ede1;
+  --coop-text: #1a5c38;
+  --chart-1: #3a7d5c;
+  --chart-2: #5ba08a;
+  --chart-3: #2e5fa3;
+  --chart-4: #7b9ec4;
+  --chart-5: #8b6b3d;
+  --chart-6: #c4a882;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
