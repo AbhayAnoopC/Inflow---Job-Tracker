@@ -1,0 +1,40 @@
+name: Daily Ingestion
+
+on:
+  schedule:
+    # 7:00 AM Pacific Time (UTC-7 in summer, UTC-8 in winter)
+    # 14:00 UTC covers both (splits the difference)
+    - cron: '0 14 * * *'
+  workflow_dispatch:   # allows manual trigger from the Actions tab
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ingestion pipeline
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python ingestion/run.py
+
+      - name: Upload run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-log-${{ github.run_id }}
+          path: ingestion/run.log
+          retention-days: 14
