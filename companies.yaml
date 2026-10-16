@@ -4,7 +4,7 @@
 # ats values: greenhouse | lever | ashby | smartrecruiters | workday
 # active: false = skip in pipeline runs
 #
-# Slugs marked "VERIFY" need the detect_ats.py script to confirm.
+# Entries may carry an optional `note:` recording why a company is inactive.
 # Run: python ingestion/detect_ats.py to auto-verify all entries.
 
 companies:
@@ -72,7 +72,8 @@ companies:
     ats: greenhouse
     slug: vertigis
     careers_url: https://vertigis.com/careers
-    active: true
+    active: false
+    note: uses Recruitee (no adapter)
 
   - name: Rooof
     city: Victoria
@@ -86,7 +87,8 @@ companies:
     ats: ashby
     slug: niricson
     careers_url: https://niricson.com/careers
-    active: true
+    active: false
+    note: uses BambooHR (no adapter)
 
   - name: AggregateIQ
     city: Victoria
@@ -212,7 +214,8 @@ companies:
     ats: smartrecruiters
     slug: ElectronicArts
     careers_url: https://www.ea.com/careers
-    active: true
+    active: false
+    note: custom careers site (no adapter)
 
   # ── Vancouver ──────────────────────────────────────────────────────────────
 
@@ -284,42 +287,48 @@ companies:
     ats: greenhouse
     slug: dapperlabs
     careers_url: https://www.dapperlabs.com/careers
-    active: true
+    active: false
+    note: hiring via a Kula-hosted board (no adapter)
 
   - name: Limeade (now WebMD Health Services)
     city: Vancouver
     ats: greenhouse
     slug: limeade
     careers_url: https://www.limeade.com/about/careers
-    active: true
+    active: false
+    note: acquired by WebMD; board gone
 
   - name: Fortinet
     city: Vancouver
     ats: lever
     slug: fortinet
     careers_url: https://www.fortinet.com/corporate/about-us/careers
-    active: true
+    active: false
+    note: custom careers site (no adapter)
 
   - name: SAP (Vancouver)
     city: Vancouver
     ats: greenhouse
     slug: sap
     careers_url: https://www.sap.com/about/careers.html
-    active: true
+    active: false
+    note: custom careers site (no adapter)
 
   - name: Amazon (Vancouver)
     city: Vancouver
     ats: smartrecruiters
     slug: Amazon
     careers_url: https://www.amazon.jobs/en/locations/vancouver-canada
-    active: true
+    active: false
+    note: amazon.jobs (no adapter)
 
   - name: Microsoft (Vancouver)
     city: Vancouver
     ats: lever
     slug: microsoft
     careers_url: https://careers.microsoft.com/us/en
-    active: true
+    active: false
+    note: custom careers site (no adapter)
 
   - name: Invoke Solutions
     city: Vancouver
@@ -333,14 +342,16 @@ companies:
     ats: greenhouse
     slug: bench
     careers_url: https://bench.co/careers
-    active: true
+    active: false
+    note: company wound down / acquired; board gone
 
   - name: KIXEYE
     city: Vancouver
     ats: greenhouse
     slug: kixeye
     careers_url: https://www.kixeye.com/careers
-    active: true
+    active: false
+    note: uses Teamtailor/Jobvite (no adapter); Victoria studio
 
   - name: Glowforge
     city: Vancouver
@@ -354,7 +365,8 @@ companies:
     ats: greenhouse
     slug: copperleaf
     careers_url: https://www.copperleaf.com/company/careers
-    active: true
+    active: false
+    note: acquired by IFS; jobs now on IFS careers site
 
   - name: Ballard Power Systems
     city: Vancouver
@@ -368,7 +380,8 @@ companies:
     ats: greenhouse
     slug: tasktop
     careers_url: https://www.tasktop.com/company/careers
-    active: true
+    active: false
+    note: acquired by Planview
 
   - name: Aspect Biosystems
     city: Vancouver
@@ -384,13 +397,6 @@ companies:
     careers_url: https://www.abcellera.com/careers
     active: true
 
-  - name: Hootsuite (VERIFY slug)
-    city: Vancouver
-    ats: greenhouse
-    slug: hootsuite
-    careers_url: https://www.hootsuite.com/company/careers
-    active: false   # duplicate placeholder; kept for detect_ats.py run
-
   # ── Remote-first / BC-based ─────────────────────────────────────────────
 
   - name: Tiny (WeCommerce)
@@ -400,9 +406,3 @@ companies:
     careers_url: https://www.tinytechnologies.io/jobs
     active: true
 
-  - name: Redbrick (remote)
-    city: Victoria
-    ats: lever
-    slug: redbrick
-    careers_url: https://www.redbrick.com/careers
-    active: false  # duplicate; first entry is canonical

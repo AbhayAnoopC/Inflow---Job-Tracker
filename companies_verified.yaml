@@ -61,6 +61,7 @@ companies:
   slug: vertigis
   careers_url: https://vertigis.com/careers
   active: false
+  note: uses Recruitee (no adapter)
   job_count: 0
 - name: Rooof
   city: Victoria
@@ -75,6 +76,7 @@ companies:
   slug: niricson
   careers_url: https://niricson.com/careers
   active: false
+  note: uses BambooHR (no adapter)
   job_count: 0
 - name: AggregateIQ
   city: Victoria
@@ -201,6 +203,7 @@ companies:
   slug: ElectronicArts
   careers_url: https://www.ea.com/careers
   active: false
+  note: custom careers site (no adapter)
   job_count: 0
 - name: Clio
   city: Vancouver
@@ -257,7 +260,7 @@ companies:
   slug: later
   careers_url: https://later.com/careers
   active: true
-  job_count: 42
+  job_count: 41
 - name: Unbounce
   city: Vancouver
   ats: greenhouse
@@ -271,6 +274,7 @@ companies:
   slug: dapperlabs
   careers_url: https://www.dapperlabs.com/careers
   active: false
+  note: hiring via a Kula-hosted board (no adapter)
   job_count: 0
 - name: Limeade (now WebMD Health Services)
   city: Vancouver
@@ -278,6 +282,7 @@ companies:
   slug: limeade
   careers_url: https://www.limeade.com/about/careers
   active: false
+  note: acquired by WebMD; board gone
   job_count: 0
 - name: Fortinet
   city: Vancouver
@@ -285,6 +290,7 @@ companies:
   slug: fortinet
   careers_url: https://www.fortinet.com/corporate/about-us/careers
   active: false
+  note: custom careers site (no adapter)
   job_count: 0
 - name: SAP (Vancouver)
   city: Vancouver
@@ -292,6 +298,7 @@ companies:
   slug: sap
   careers_url: https://www.sap.com/about/careers.html
   active: false
+  note: custom careers site (no adapter)
   job_count: 0
 - name: Amazon (Vancouver)
   city: Vancouver
@@ -299,6 +306,7 @@ companies:
   slug: Amazon
   careers_url: https://www.amazon.jobs/en/locations/vancouver-canada
   active: false
+  note: amazon.jobs (no adapter)
   job_count: 0
 - name: Microsoft (Vancouver)
   city: Vancouver
@@ -306,6 +314,7 @@ companies:
   slug: microsoft
   careers_url: https://careers.microsoft.com/us/en
   active: false
+  note: custom careers site (no adapter)
   job_count: 0
 - name: Invoke Solutions
   city: Vancouver
@@ -320,6 +329,7 @@ companies:
   slug: bench
   careers_url: https://bench.co/careers
   active: false
+  note: company wound down / acquired; board gone
   job_count: 0
 - name: KIXEYE
   city: Vancouver
@@ -327,6 +337,7 @@ companies:
   slug: kixeye
   careers_url: https://www.kixeye.com/careers
   active: false
+  note: uses Teamtailor/Jobvite (no adapter); Victoria studio
   job_count: 0
 - name: Glowforge
   city: Vancouver
@@ -341,6 +352,7 @@ companies:
   slug: copperleaf
   careers_url: https://www.copperleaf.com/company/careers
   active: false
+  note: acquired by IFS; jobs now on IFS careers site
   job_count: 0
 - name: Ballard Power Systems
   city: Vancouver
@@ -355,6 +367,7 @@ companies:
   slug: tasktop
   careers_url: https://www.tasktop.com/company/careers
   active: false
+  note: acquired by Planview
   job_count: 0
 - name: Aspect Biosystems
   city: Vancouver
@@ -370,24 +383,10 @@ companies:
   careers_url: https://www.abcellera.com/careers
   active: true
   job_count: 35
-- name: Hootsuite (VERIFY slug)
-  city: Vancouver
-  ats: greenhouse
-  slug: hootsuite
-  careers_url: https://www.hootsuite.com/company/careers
-  active: false
-  job_count: 4
 - name: Tiny (WeCommerce)
   city: Victoria
   ats: lever
   slug: tiny
   careers_url: https://www.tinytechnologies.io/jobs
-  active: false
-  job_count: 0
-- name: Redbrick (remote)
-  city: Victoria
-  ats: lever
-  slug: redbrick
-  careers_url: https://www.redbrick.com/careers
   active: false
   job_count: 0
