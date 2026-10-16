@@ -1,6 +1,7 @@
 # BC Co-op & Tech Job Tracker
 
 [![Daily Ingestion](https://github.com/AbhayAnoopC/Inflow---Job-Tracker/actions/workflows/daily-ingest.yml/badge.svg)](https://github.com/AbhayAnoopC/Inflow---Job-Tracker/actions/workflows/daily-ingest.yml)
+[![Tests](https://github.com/AbhayAnoopC/Inflow---Job-Tracker/actions/workflows/tests.yml/badge.svg)](https://github.com/AbhayAnoopC/Inflow---Job-Tracker/actions/workflows/tests.yml)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AbhayAnoopC/Inflow---Job-Tracker&root-directory=web)
 
 A daily pipeline that scrapes public ATS job boards (Greenhouse, Lever, Ashby, SmartRecruiters) from British Columbia tech companies, keeps the BC and Remote postings, flags co-op and entry-level roles, and extracts the skills each one mentions. The results are stored in Supabase and shown in a Next.js dashboard. Job descriptions are never stored; every posting links back to the original listing.
