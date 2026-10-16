@@ -3,7 +3,7 @@ import re
 _BC_RE = re.compile(
     r"\b(victoria|vancouver|surrey|burnaby|richmond|kelowna|bc|british columbia)\b", re.I
 )
-_REMOTE_RE = re.compile(r"\bremote\b", re.I)
+_REMOTE_RE = re.compile(r"\b(remote|distributed|work from home)\b", re.I)
 # Remote roles explicitly tied to another region are not useful for BC applicants.
 _NON_CANADA_RE = re.compile(
     r"\b(us|usa|u\.s\.|united states|uk|united kingdom|europe|emea|eu|apac|latam|india|australia)\b",

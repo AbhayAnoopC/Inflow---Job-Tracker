@@ -97,7 +97,9 @@ companies:
   ats: ashby
   slug: shift
   careers_url: https://shift.com/jobs
-  active: true
+  active: false
+  note: detect_ats fell back to Ashby 'shift', which is a different company (Sydney);
+    find the real Victoria board
   job_count: 17
 - name: Audette
   city: Victoria

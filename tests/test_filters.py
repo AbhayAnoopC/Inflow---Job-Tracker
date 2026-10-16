@@ -10,6 +10,7 @@ from filters import is_bc_location, is_coop
         "Victoria, British Columbia, Canada",
         "Remote",
         "remote - canada",
+        "Distributed - Canada",
         "Burnaby",
         "KELOWNA, bc",
         "Surrey, BC (Hybrid)",

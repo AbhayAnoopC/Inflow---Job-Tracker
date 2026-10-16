@@ -109,7 +109,8 @@ companies:
     ats: greenhouse
     slug: shift
     careers_url: https://shift.com/jobs
-    active: true
+    active: false
+    note: detect_ats fell back to Ashby 'shift', which is a different company (Sydney); find the real Victoria board
 
   - name: Audette
     city: Victoria
